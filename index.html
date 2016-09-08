@@ -1,1 +1,45 @@
-welcome
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<style>
+	ul li{display: inline-block; list-style:table-cell;height:115px;}
+		ul{height: 150px;width:100%;overflow: hidden;}
+		li{padding: 5px; margin: 5px;}
+	ul	li:hover{border:solid green 5px;}
+
+
+
+
+	</style>
+	<ul class="slider">
+		<li><img src="uimg/1.png" alt=""></li>
+		<li><img src="uimg/2.png" alt=""></li>
+		<li><img src="uimg/3.png" alt=""></li>
+		<li><img src="uimg/4.png" alt=""></li>
+		<li><img src="uimg/5.png" alt=""></li>
+		<li><img src="uimg/6.png" alt=""></li>
+		<li><img src="uimg/7.png" alt=""></li>
+		<li><img src="uimg/8.png" alt=""></li>
+		<li><img src="uimg/9.png" alt=""></li>
+		<li><img src="uimg/10.png" alt=""></li>
+		<li><img src="uimg/11.png" alt=""></li>
+		<li><img src="uimg/12.png" alt=""></li>
+		<li><img src="uimg/13.png" alt=""></li>
+		<li><img src="uimg/14.png" alt=""></li>
+		<li><img src="uimg/15.png" alt=""></li>
+		<li><img src="uimg/16.png" alt=""></li>
+		<li><img src="uimg/17.png" alt=""></li>
+		<li><img src="uimg/18.png" alt=""></li>
+		<li><img src="uimg/19.png" alt=""></li>
+		<li><img src="uimg/20.png" alt=""></li>
+	</ul>
+	<script type="text/javascript">
+		setInterval(function(){ ($("ul.slider>li").first()).insertAfter($("ul>li").last()) }, 3000);
+	</script>
+</body>
+</html>
