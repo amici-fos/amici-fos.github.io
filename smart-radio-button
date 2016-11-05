@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  
+    <title></title>
+    <style>
+    input[type=radio]{display: none;}
+label{width: 30px;border:solid thin #ccc; margin: 20px;display: table-cell;margin:0 10px;padding: 10px;
+    /* CSS3 */}
+input:checked[type=radio]+label{color:white;background-color: green;}
+
+    </style>
+  </head>
+  <body>
+My playground
+<div id="container"></div>
+<input type="radio" name="gender" value="male" id="opt1"><label for="opt1">Option1</label>
+<input type="radio" name="gender" value="male" id="opt2"><label for="opt2">Option2</label>
+<input type="radio" name="gender" value="male" id="opt3"><label for="opt3">Option3</label>
+<input type="radio" name="gender" value="male" id="opt4"><label for="opt4">Option4</label>
+<input type="radio" name="gender" value="male" id="opt5"><label for="opt5">Option5</label>
+<input type="radio" name="gender" value="male" id="opt6"><label for="opt6">Option6</label>
+<input type="radio" name="gender" value="male" id="opt7"><label for="opt7">Option7</label>
+<script src="myjs.js"></script>
+  </body>
+</html>
