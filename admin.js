@@ -35,15 +35,17 @@ analysecontent: function(){
   docMap=this.content.toLowerCase().replace(/\s+\n+/g,' ').trim();
   console.log(_.values(this.todos));
   for (i = 0; i < this.todos.length; i++) {
-//  count= temp.split('is').length - 1
+
 item_to_search=this.todos[i].text;
+count= docMap.split(item_to_search).length - 1
 pos= docMap.indexOf(item_to_search);
 if (pos>=0){
   this.todos[i].found='green-text';
-
+  this.todos[i].count=count;
 }
 else{
   this.todos[i].found='red-text';
+  this.todos[i].count=0;
 }
 
 }
