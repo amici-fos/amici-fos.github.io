@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="2Pot5May20Ban17qc9D1gQoqaZeyiqQMF5NmrjrE">
+    <title>Quick,Easy and Effective Learning for sure shot success</title>
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+  <body>
+<div class="container">
+
+<div class="content">
+  <div class="row" id="mainapp">
+<div class="col m9">
+
+<div class="input-field col s12">
+      <textarea id="content" class="materialize-textarea" v-model="content" v-on:blur="analysecontent" ></textarea>
+
+    </div>
+</div>
+
+<div class="col m3">
+  <div class="keywords">
+<ol>
+
+  <li v-for="todo in todos" v-bind:class="[todo.found]" >
+
+  {{ todo.text }} - [ {{ todo.count }} ]
+  </li>
+
+</ol>
+  </div>
+  <div class="input-field col s12">
+        <textarea id="keywords" class="materialize-textarea" v-model="keywords" v-on:change="reverseMessage"></textarea>
+
+      </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<footer>
+
+  <script src="jquery.min.js"></script>
+  <script src="vue.js"></script>
+  <script src="pouchdb.min.js"></script>
+  <script src="materialize.min.js"></script>
+  <script src="underscore-min.js"></script>
+</footer>
+  <script src="admin.js"></script>
+  </body>
+</html>
